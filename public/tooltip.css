@@ -1,0 +1,10 @@
+.time-tooltip {
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  z-index: 9999;
+  pointer-events: none;
+}

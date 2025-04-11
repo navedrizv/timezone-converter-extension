@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Time Converter Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/index.html"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["luxon.min.js", "timeUtil.js", "contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
